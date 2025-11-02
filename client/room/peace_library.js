@@ -23,7 +23,7 @@ function set_build_settings() {
     context.BuildModeEnable.Value = true;
     context.CollapseChangeEnable.Value = true;
     context.RenameMapEnable.Value = true;
-    context.ChangeMapAutorsEnable.Value = true;
+    context.ChangeMapAuthorsEnable.Value = true;
     context.LoadMapEnable.Value = true;
     context.ChangeSpawnsEnable.Value = true;
     context.BlocksSet.Value = room.BuildBlocksSet.AllClear; // делаем возможность строительства всеми блоками
@@ -90,4 +90,4 @@ export function create_teams() {
     room.Teams.OnRequestJoinTeam.Add(function (player, team) { team.Add(player); });
     // если игрок сменил команду или выбрал ее, то происходит спавн игрока
     room.Teams.OnPlayerChangeTeam.Add(function (player) { player.Spawns.Spawn(); });
-              }
+}
