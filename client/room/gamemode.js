@@ -31,7 +31,7 @@ Teams.OnRequestJoinTeam.Add(function (p, t) { t.Add(p), p.Spawns.Spawn()});
  build.BuildModeEnable.Value = true;
  build.CollapseChangeEnable.Value = true;
  build.RenameMapEnable.Value = true;
- build.ChangeMapAuthorsEnable.Value = false;
+ build.IsChangeMapAuthorsEnable.Value = true;
  build.LoadMapEnable.Value = true;
  build.ChangeSpawnsEnable.Value = true;
 
