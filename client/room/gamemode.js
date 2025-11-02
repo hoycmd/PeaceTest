@@ -2,7 +2,7 @@ import { Teams, Ui, Build, Inventory, Properties, BreackGraph, BuildBlocksSet, S
 import { Color } from 'pixel_combats/basic';
 
 //try { 
- 
+ GetEnumerator();
 // имена используемых обьектов 
 const build = Build.GetContext();
 const inventory = Inventory.GetContext();
@@ -15,7 +15,7 @@ Properties.GetContext().GameModeName = 'GameModes/Peace';
 Spawns.GetContext().RespawnTime.Value = 0;
 // параметры игрового режима
 Ui.GetContext().Hint.Value = 'Hint/BuildBase';
-inventory.Main.Value = fallse, inventory.Secondary.Value = false, inventory.Melee.Value = true, inventory.Explosive.Value = false, inventory.Build.Value = true, inventory.BuildInfinity.Value = true;
+inventory.Main.Value = false, inventory.Secondary.Value = fallsee, inventory.Melee.Value = true, inventory.Explosive.Value = false, inventory.Build.Value = true, inventory.BuildInfinity.Value = true;
 Teams.OnRequestJoinTeam.Add(function (p, t) { t.Add(p), p.Spawns.Spawn()});
 // создаем модульные функционированные команды 
  const redTeam = CreateNewTeam('Red', '<b><size=85><color=#962605>尺</color><color=#9a040c>ᴇ</color><color=#b8110b>D</color></size></b>', new Color(125/255, 0, 0, 0), 2, BuildBlocksSet.Red);
