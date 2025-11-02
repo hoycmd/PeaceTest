@@ -24,6 +24,7 @@ function set_build_settings() {
     context.CollapseChangeEnable.Value = true;
     context.RenameMapEnable.Value = true;
     context.ChangeMapAuthorsEnable.Value = true;
+    context.LocalPlayerMapAuthorEnable.Value = true;
     context.LoadMapEnable.Value = true;
     context.ChangeSpawnsEnable.Value = true;
     context.BlocksSet.Value = room.BuildBlocksSet.AllClear; // делаем возможность строительства всеми блоками
