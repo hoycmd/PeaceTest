@@ -26,7 +26,7 @@ Teams.OnRequestJoinTeam.Add(function (p, t) { t.Add(p), p.Spawns.Spawn()});
  build.BalkLenChange.Value = true;
  build.SetSkyEnable.Value = true;
  build.GenMapEnable.Value = true;
- build.ChangeCameraPointsEnable = true;
+ build.ChangeCameraPointsEnable.Value = true;
  build.QuadChangeEnable.Value = true;
  build.BuildModeEnable.Value = true;
  build.CollapseChangeEnable.Value = true;
