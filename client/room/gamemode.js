@@ -1,6 +1,8 @@
-import { Teams, Ui, Build, Inventory, Properties, BreackGraph, BuildBlocksSet, Spawns } from 'pixel_combats/room';
+import { Teams, Ui, Build, Inventory, Properties, BreackGraph, BuildBlocksSet, Spawns , msg } from 'pixel_combats/room';
 import { Color } from 'pixel_combats/basic';
 
+try {
+ 
 // имена используемых обьектов 
 const build = Build.GetContext();
 const inventory = Inventory.GetContext();
@@ -41,6 +43,9 @@ let NewTeam = Teams.Get(TeamName);
 return NewTeam;
 }
 
+} catch (e) {
+    msg.Show(`${e.name}: ${e.message} ${e.stack}`);
+}
 
 
 
