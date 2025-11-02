@@ -14,7 +14,7 @@ build.BlocksSet.Value = BuildBlocksSet.AllClear;
 Properties.GetContext().GameModeName = 'GameModes/Peace';
 Spawns.GetContext().RespawnTime.Value = 0;
 // параметры игрового режима
-Ui.GetContext().Hint.Value = 'Hint/BuildBase';
+Ui.GetContext().Hint.Value = 'Hint/GameMode';
 inventory.Main.Value = false, inventory.Secondary.Value = false, inventory.Melee.Value = true, inventory.Explosive.Value = false, inventory.Build.Value = true, inventory.BuildInfinity.Value = true;
 Teams.OnRequestJoinTeam.Add(function (p, t) { t.Add(p), p.Spawns.Spawn()});
 // создаем модульные функционированные команды 
